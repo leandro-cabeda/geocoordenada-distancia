@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "699d7e5b-e422-443e-98f0-00769152a168",
+		"name": "API GeooCordenada",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DEV",
+			"item": [
+				{
+					"name": "Local",
+					"item": [
+						{
+							"name": "GeoCoordenada Serviço - Welcome API",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/geocoordenada",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"geocoordenada"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GeoCoordenada Serviço - Calcula Distancia entre dois pontos GeoCoordenada",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/geocoordenada/distance?latitude1=51.5007&longitude1=0.1246&latitude2=40.6892&longitude2=74.0445",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"geocoordenada",
+										"distance"
+									],
+									"query": [
+										{
+											"key": "latitude1",
+											"value": "51.5007"
+										},
+										{
+											"key": "longitude1",
+											"value": "0.1246"
+										},
+										{
+											"key": "latitude2",
+											"value": "40.6892"
+										},
+										{
+											"key": "longitude2",
+											"value": "74.0445"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
